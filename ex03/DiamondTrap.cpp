@@ -6,13 +6,13 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 10:30:08 by amblanch          #+#    #+#             */
-/*   Updated: 2025/10/01 22:21:40 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/10/02 14:40:46 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap(): ClapTrap("_clap_name"), FragTrap(""), ScavTrap("") { //100 50 30
+DiamondTrap::DiamondTrap(): ClapTrap("_clap_name"), FragTrap(""), ScavTrap("") {
     _hit_pts = _hit_pts_default;
     _energy_pts = _energy_pts_default;
     _attack_damage = _attack_damage_default;
@@ -25,7 +25,7 @@ DiamondTrap::DiamondTrap(std::string name): ClapTrap(name + "_clap_name"), FragT
     _energy_pts = _energy_pts_default;
     _attack_damage = _attack_damage_default;
     std::cout << "Asigment Constructor DiamondTrap " << _name << " called" << std::endl;
-    std::cout << "DiamondTrap value is hit_pts(" << FragTrap::_hit_pts << "), energy(" << ScavTrap::_energy_pts << "), attack_dommage(" << FragTrap::_attack_damage << ")" << std::endl; 
+    //std::cout << "DiamondTrap value is hit_pts(" << FragTrap::_hit_pts << "), energy(" << ScavTrap::_energy_pts << "), attack_dommage(" << FragTrap::_attack_damage << ")" << std::endl; 
 }
 
 DiamondTrap::~DiamondTrap() {

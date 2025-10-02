@@ -6,7 +6,7 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 13:14:43 by amblanch          #+#    #+#             */
-/*   Updated: 2025/10/01 22:20:06 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/10/02 14:30:43 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,9 @@ class FragTrap : virtual public ClapTrap {
         FragTrap &operator=(const FragTrap &other);
         ~FragTrap();
         void highFivesGuys(void);
-        void attack(const std::string &target);
     protected:
         static const int _hit_pts_default = 100;
         static const int _attack_damage_default = 30;
-        
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 13:20:28 by amblanch          #+#    #+#             */
-/*   Updated: 2025/10/01 11:18:20 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/10/02 13:51:44 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,13 +55,3 @@ FragTrap &FragTrap::operator=(const FragTrap &other) {
     return (*this);
     
 };
-
-void FragTrap::attack(const std::string &target) {
-    std::cout << "FragTrap " << _name;
-    if (_hit_pts <= 0)
-        std::cout << "is dead!" << std::endl;
-    else if (_energy_pts <= 0)
-        std::cout << "not enough energy!" << std::endl;
-    else
-        std::cout << " attacks " << target <<", causing " << _attack_damage << " points of damage!" << std::endl;
-}

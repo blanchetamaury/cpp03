@@ -11,7 +11,6 @@ NAME = ex03
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CXX) -c $(SRC) $(CXXFLAGS)
 	$(CXX) -o $(NAME) $^ $(CXXFLAGS)
 
 clean:

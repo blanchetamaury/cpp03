@@ -6,7 +6,7 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 09:51:41 by amblanch          #+#    #+#             */
-/*   Updated: 2025/10/01 10:59:31 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/10/02 14:31:57 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,6 @@ int main(void) {
     didier.beRepaired(1);
     jimmy.takeDamage(100);
     jimmy.takeDamage(100);
+    jimmy.beRepaired(10);
+    
 }
